@@ -17,4 +17,17 @@ const TodoList = () => {
             return filteredTodos;
         });
     };
+
+    const allTodos = todos.map(todo => <Todo message={todo} removeTodo={removeTodo} />);
+
+    return (
+        <div className="TodoList">
+            <div className="TodoList-header">
+                <h1>Your ToDo List</h1>
+            </div>
+            <div className="TodoList-todos">
+                {allTodos}
+            </div>
+        </div>
+    );
 };
