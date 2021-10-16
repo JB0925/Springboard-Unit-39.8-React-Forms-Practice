@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Todo from "./Todo";
 import "./TodoList.css";
+import {v4 as uuid} from "uuid";
 
 const TodoList = () => {
     const [todos, updateTodos] = useState([]);
@@ -18,7 +19,10 @@ const TodoList = () => {
         });
     };
 
-    const allTodos = todos.map(todo => <Todo message={todo} removeTodo={removeTodo} />);
+    const allTodos = todos.map(todo => <Todo 
+                                        message={todo} 
+                                        removeTodo={removeTodo} 
+                                        key={uuid()}/>);
 
     return (
         <div className="TodoList">
@@ -31,3 +35,5 @@ const TodoList = () => {
         </div>
     );
 };
+
+export default TodoList;
