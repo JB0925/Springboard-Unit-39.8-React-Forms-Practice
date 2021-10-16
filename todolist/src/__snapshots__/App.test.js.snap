@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The App component matches the snapshot. 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="App-header"
+    >
+      <h1>
+        Your ToDo List
+      </h1>
+    </div>
+    <div
+      class="TodoList"
+    >
+      <div
+        class="TodoList-form"
+      >
+        <form>
+          <label
+            for="newTodo"
+          >
+            Enter a New Todo
+          </label>
+          <input
+            id="newTodo"
+            name="newTodo"
+            placeholder="i.e. Mow The Grass"
+            type="text"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Add Todo
+          </button>
+        </form>
+      </div>
+      <div
+        class="TodoList-todos"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`The NewTodoForm component matches the snapshot. 1`] = `
+<DocumentFragment>
+  <form>
+    <label
+      for="newTodo"
+    >
+      Enter a New Todo
+    </label>
+    <input
+      id="newTodo"
+      name="newTodo"
+      placeholder="i.e. Mow The Grass"
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Add Todo
+    </button>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`The Todo component matches the snapshot. 1`] = `
+<DocumentFragment>
+  <div
+    class="Todo"
+  >
+    <div
+      class="Todo-message"
+    />
+    <div
+      class="Todo-button"
+    >
+      <button>
+        X
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`The TodoList component matches the snapshot. 1`] = `
+<DocumentFragment>
+  <div
+    class="TodoList"
+  >
+    <div
+      class="TodoList-form"
+    >
+      <form>
+        <label
+          for="newTodo"
+        >
+          Enter a New Todo
+        </label>
+        <input
+          id="newTodo"
+          name="newTodo"
+          placeholder="i.e. Mow The Grass"
+          type="text"
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          Add Todo
+        </button>
+      </form>
+    </div>
+    <div
+      class="TodoList-todos"
+    />
+  </div>
+</DocumentFragment>
+`;
