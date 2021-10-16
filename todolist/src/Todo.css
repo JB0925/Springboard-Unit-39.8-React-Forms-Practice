@@ -1,3 +1,16 @@
 .Todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: left;
+    width: 100%;
+}
+
+.Todo-message {
+    margin-left: 20%;
+}
+
+.Todo-button {
+    margin-left: auto;
+    margin-right: 10%;
 }

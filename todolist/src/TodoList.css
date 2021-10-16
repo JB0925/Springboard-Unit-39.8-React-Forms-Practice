@@ -1,0 +1,46 @@
+.TodoList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 55%;
+    /* padding: 25px; */
+}
+
+.TodoList-form {
+    width: 50%;
+}
+
+.TodoList-todos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TodoList-todos button {
+    padding: 1px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .TodoList {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .TodoList-form, .TodoList-todos {
+        width: 100%;
+    }
+
+    form {
+        width: auto;
+    }
+
+    .Todo-message {
+        margin-left: 5%;
+    }
+}

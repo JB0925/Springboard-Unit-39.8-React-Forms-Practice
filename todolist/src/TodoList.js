@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Todo from "./Todo";
+import NewTodoForm from "./NewTodoForm";
 import "./TodoList.css";
 import {v4 as uuid} from "uuid";
 
@@ -26,8 +27,8 @@ const TodoList = () => {
 
     return (
         <div className="TodoList">
-            <div className="TodoList-header">
-                <h1>Your ToDo List</h1>
+            <div className="TodoList-form">
+                <NewTodoForm addTodo={addTodo} />
             </div>
             <div className="TodoList-todos">
                 {allTodos}
